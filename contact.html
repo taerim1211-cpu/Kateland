@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Kateland INC</title>
+<meta name="description" content="Get in touch with Kateland INC about web development, mobile applications, IT consulting, or investment opportunities.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Kateland INC"></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Let's talk about what you're building.</h1>
+    <p>Whether it's a website, an app, a technology strategy, or an investment opportunity — we'd love to hear from you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-layout">
+    <div class="contact-info-card">
+      <h3>Why reach out?</h3>
+      <p>Fill out the form and a member of our team will follow up to learn more about your project or opportunity.</p>
+
+      <div class="contact-info-row">
+        <div class="icon-sm">&#128187;</div>
+        <div><strong>Project Inquiries</strong><span>Websites, web apps, and mobile apps</span></div>
+      </div>
+      <div class="contact-info-row">
+        <div class="icon-sm">&#128202;</div>
+        <div><strong>IT Consulting</strong><span>Strategy, architecture, and digital transformation</span></div>
+      </div>
+      <div class="contact-info-row">
+        <div class="icon-sm">&#128176;</div>
+        <div><strong>Investment</strong><span>Funding and partnership opportunities</span></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe">
+            <div class="error-msg">Please enter your name.</div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com">
+            <div class="error-msg">Please enter a valid email address.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="company">Company (optional)</label>
+            <input type="text" id="company" name="company" placeholder="Company name">
+          </div>
+          <div class="field">
+            <label for="service">What are you interested in?</label>
+            <select id="service" name="service">
+              <option value="">Select an option</option>
+              <option value="web-development">Website Development</option>
+              <option value="web-application">Web Application</option>
+              <option value="mobile-application">Mobile Application</option>
+              <option value="it-consulting">IT Consulting</option>
+              <option value="investment">Investment</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="error-msg">Please select a service.</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us a bit about your project or opportunity..."></textarea>
+          <div class="error-msg">Please enter at least 10 characters.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="assets/logo-white.svg" alt="Kateland INC"></div>
+        <p>Kateland INC builds websites, web and mobile applications, delivers IT consulting, and invests in the technology companies of tomorrow.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Web Development</a>
+        <a href="services.html">Mobile Apps</a>
+        <a href="services.html">IT Consulting</a>
+        <a href="services.html">Investment</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <a href="contact.html">Contact Form</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Kateland INC. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

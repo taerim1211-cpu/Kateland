@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <rect x="0" y="4" width="40" height="40" rx="6" fill="#0B1F3A"/>
+  <path d="M12 12h6v10.5L27 12h7.5L23.5 24 34.8 36H27l-9-10.5V36h-6V12z" fill="#D4AF37"/>
+  <text x="52" y="24" font-family="Georgia, 'Playfair Display', serif" font-size="19" fill="#0B1F3A" font-weight="700">Kateland</text>
+  <text x="52" y="39" font-family="Arial, sans-serif" font-size="10" letter-spacing="3" fill="#8a8f98">INCORPORATED</text>
+</svg>
