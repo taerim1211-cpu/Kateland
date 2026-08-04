@@ -39,6 +39,10 @@
       <p>Fill out the form and a member of our team will follow up to learn more about your project or opportunity.</p>
 
       <div class="contact-info-row">
+        <div class="icon-sm">&#9993;</div>
+        <div><strong>Email Us</strong><span><a href="mailto:info@katelandinc.com" style="color:inherit;">info@katelandinc.com</a></span></div>
+      </div>
+      <div class="contact-info-row">
         <div class="icon-sm">&#128187;</div>
         <div><strong>Project Inquiries</strong><span>Websites, web apps, and mobile apps</span></div>
       </div>
@@ -53,7 +57,9 @@
     </div>
 
     <div class="form-card">
-      <form id="contact-form" novalidate>
+      <form id="contact-form" action="https://formspree.io/f/xeajjvwq" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New inquiry from katelandinc.com">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="field">
             <label for="name">Full Name</label>
@@ -123,6 +129,7 @@
       </div>
       <div class="footer-col">
         <h4>Get in Touch</h4>
+        <a href="mailto:info@katelandinc.com">info@katelandinc.com</a>
         <a href="contact.html">Contact Form</a>
       </div>
     </div>

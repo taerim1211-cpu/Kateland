@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wrapper.classList.remove('error');
     };
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       let valid = true;
 
@@ -56,10 +56,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // No backend is connected yet — simulate a successful submission.
-      status.textContent = "Thanks! Your message has been received. We'll be in touch shortly.";
-      status.classList.add('success');
-      form.reset();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (response.ok) {
+          status.textContent = "Thanks! Your message has been received. We'll be in touch shortly.";
+          status.classList.add('success');
+          form.reset();
+        } else {
+          status.textContent = 'Something went wrong sending your message. Please try again or email us directly.';
+          status.classList.add('error');
+        }
+      } catch (err) {
+        status.textContent = 'Something went wrong sending your message. Please try again or email us directly.';
+        status.classList.add('error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
     });
 
     Object.keys(validators).forEach((name) => {
