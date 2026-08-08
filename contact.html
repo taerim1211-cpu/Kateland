@@ -5,10 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Kateland INC</title>
 <meta name="description" content="Get in touch with Kateland INC about web development, mobile applications, IT consulting, or investment opportunities.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Kateland INC">
+<meta property="og:description" content="Get in touch with Kateland INC about web development, mobile applications, IT consulting, or investment opportunities.">
+<meta property="og:url" content="https://katelandinc.com/contact.html">
+<meta property="og:image" content="https://katelandinc.com/assets/logo.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact | Kateland INC">
+<meta name="twitter:description" content="Get in touch with Kateland INC about web development, mobile applications, IT consulting, or investment opportunities.">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="container header-inner">
@@ -23,6 +36,8 @@
     <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="container">
@@ -39,19 +54,27 @@
       <p>Fill out the form and a member of our team will follow up to learn more about your project or opportunity.</p>
 
       <div class="contact-info-row">
-        <div class="icon-sm">&#9993;</div>
-        <div><strong>Email Us</strong><span><a href="mailto:info@katelandinc.com" style="color:inherit;">info@katelandinc.com</a></span></div>
+        <div class="icon-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        </div>
+        <div><strong>Email Us</strong><span><a href="mailto:info@katelandinc.com" class="link-inherit">info@katelandinc.com</a></span></div>
       </div>
       <div class="contact-info-row">
-        <div class="icon-sm">&#128187;</div>
+        <div class="icon-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg>
+        </div>
         <div><strong>Project Inquiries</strong><span>Websites, web apps, and mobile apps</span></div>
       </div>
       <div class="contact-info-row">
-        <div class="icon-sm">&#128202;</div>
+        <div class="icon-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
         <div><strong>IT Consulting</strong><span>Strategy, architecture, and digital transformation</span></div>
       </div>
       <div class="contact-info-row">
-        <div class="icon-sm">&#128176;</div>
+        <div class="icon-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+        </div>
         <div><strong>Investment</strong><span>Funding and partnership opportunities</span></div>
       </div>
     </div>
@@ -99,12 +122,14 @@
           <div class="error-msg">Please enter at least 10 characters.</div>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
         <div id="form-status" class="form-status"></div>
       </form>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
@@ -122,10 +147,10 @@
       </div>
       <div class="footer-col">
         <h4>Services</h4>
-        <a href="services.html">Web Development</a>
-        <a href="services.html">Mobile Apps</a>
-        <a href="services.html">IT Consulting</a>
-        <a href="services.html">Investment</a>
+        <a href="services.html#web-development">Web Development</a>
+        <a href="services.html#mobile-applications">Mobile Apps</a>
+        <a href="services.html#it-consulting">IT Consulting</a>
+        <a href="services.html#investment">Investment</a>
       </div>
       <div class="footer-col">
         <h4>Get in Touch</h4>
@@ -135,7 +160,10 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="year"></span> Kateland INC. All rights reserved.</span>
-      <span>Built with care.</span>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
     </div>
   </div>
 </footer>

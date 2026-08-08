@@ -5,10 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us | Kateland INC</title>
 <meta name="description" content="Learn about Kateland INC — a technology company building software and investing in the next generation of tech companies.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Us | Kateland INC">
+<meta property="og:description" content="Learn about Kateland INC — a technology company building software and investing in the next generation of tech companies.">
+<meta property="og:url" content="https://katelandinc.com/about.html">
+<meta property="og:image" content="https://katelandinc.com/assets/logo.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About Us | Kateland INC">
+<meta name="twitter:description" content="Learn about Kateland INC — a technology company building software and investing in the next generation of tech companies.">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="container header-inner">
@@ -23,6 +36,8 @@
     <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="container">
@@ -43,7 +58,7 @@
     <div class="card">
       <h3>Mission</h3>
       <p>To build reliable, thoughtful technology and to back the people and companies building the future.</p>
-      <h3 style="margin-top:24px;">Vision</h3>
+      <h3 class="mt-lg">Vision</h3>
       <p>A world where great technical execution and smart capital are never out of reach for ambitious teams.</p>
     </div>
   </div>
@@ -121,6 +136,8 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -137,10 +154,10 @@
       </div>
       <div class="footer-col">
         <h4>Services</h4>
-        <a href="services.html">Web Development</a>
-        <a href="services.html">Mobile Apps</a>
-        <a href="services.html">IT Consulting</a>
-        <a href="services.html">Investment</a>
+        <a href="services.html#web-development">Web Development</a>
+        <a href="services.html#mobile-applications">Mobile Apps</a>
+        <a href="services.html#it-consulting">IT Consulting</a>
+        <a href="services.html#investment">Investment</a>
       </div>
       <div class="footer-col">
         <h4>Get in Touch</h4>
@@ -150,7 +167,10 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="year"></span> Kateland INC. All rights reserved.</span>
-      <span>Built with care.</span>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
     </div>
   </div>
 </footer>
