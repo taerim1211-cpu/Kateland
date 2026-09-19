@@ -282,15 +282,15 @@ section { padding: 96px 0 112px; }
 .link-inherit {
   color: var(--navy-700);
   text-decoration: underline;
-  text-decoration-color: var(--gray-300);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
   font-weight: 600;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  transition: color 0.15s ease;
 }
 .link-inherit:hover,
 .link-inherit:focus-visible {
   color: var(--gold-500);
-  text-decoration-color: var(--gold-500);
 }
 .btn-block { width: 100%; }
 
