@@ -27,7 +27,9 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -84,7 +86,7 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Kateland INC"></a>
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Kateland INC" width="200" height="40"></a>
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -207,25 +209,25 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo"><img src="assets/logo-white.svg" alt="Kateland INC"></div>
+        <div class="footer-logo"><img src="assets/logo-white.svg" alt="Kateland INC" width="150" height="30"></div>
         <p>Kateland INC builds websites, web and mobile applications, delivers IT consulting, and invests in the technology companies of tomorrow.</p>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <p class="footer-heading">Company</p>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <p class="footer-heading">Services</p>
         <a href="services.html#web-development">Web Development</a>
         <a href="services.html#mobile-applications">Mobile Apps</a>
         <a href="services.html#it-consulting">IT Consulting</a>
         <a href="services.html#investment">Investment</a>
       </div>
       <div class="footer-col">
-        <h4>Get in Touch</h4>
+        <p class="footer-heading">Get in Touch</p>
         <a href="mailto:info@katelandinc.com">info@katelandinc.com</a>
         <a href="contact.html">Contact Form</a>
       </div>

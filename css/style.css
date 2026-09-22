@@ -445,7 +445,7 @@ section { padding: 96px 0 112px; }
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .footer-brand p { color: rgba(255,255,255,0.55); font-size: 0.9rem; max-width: 280px; }
-.footer-col h4 {
+.footer-col .footer-heading {
   color: var(--white);
   font-size: 0.85rem;
   letter-spacing: 1px;
